@@ -141,18 +141,12 @@ struct TodayView: View {
         }
     }
     private func saveResult(status: DrugTestStatus, rawPortalText: String = ""){
-        let result = TestResult(
-            checkedAt: .now,
+        let recorder = CheckResultRecorder(modelContext: modelContext)
+        
+        recorder.save(
             status: status,
             rawPortalText: rawPortalText
         )
-        modelContext.insert(result)
-        
-        do {
-            try modelContext.save()
-            self.status = status
-        } catch {
-            print("Failed to save test result: \(error)")
-        }
+        self.status = status
     }
 }
