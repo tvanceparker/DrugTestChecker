@@ -12,6 +12,12 @@ import DrugTestCheckerCore
 struct TodayView: View {
     @State private var status: DrugTestStatus = .notChecked
     @Environment(\.modelContext) private var modelContext
+    @Query(sort: \TestResult.checkedAt, order: .reverse)
+    private var results: [TestResult]
+    
+    private var latestResult: TestResult? {
+        results.first
+    }
 
     private var statusSymbol: String {
         switch status {
@@ -83,7 +89,7 @@ struct TodayView: View {
 
                 if status == .needToTest {
                     Button("I Tested") {
-                        status = .completedTest
+                        saveResult(status: .completedTest, rawPortalText: "User marked test completed")
                     }
                     .buttonStyle(.bordered)
                 }
@@ -95,7 +101,9 @@ struct TodayView: View {
                         .font(.headline)
 
                     HStack {
-                        Button("Not Checked") { status = .notChecked }
+                        Button("Not Checked") {
+                            saveResult(status: .notChecked, rawPortalText: "Preview: not checked")
+                        }
                         Button("Clear"){
                             saveResult(status: .noTestToday, rawPortalText: "Preview: no test today")
                         }
@@ -125,6 +133,11 @@ struct TodayView: View {
             }
             .padding()
             .navigationTitle("Today")
+            .onAppear {
+                if let latestResult {
+                    status = latestResult.status
+                }
+            }
         }
     }
     private func saveResult(status: DrugTestStatus, rawPortalText: String = ""){
