@@ -1,0 +1,45 @@
+{
+  "configurations" : [
+    {
+      "id" : "085E5B7A-7DD4-4063-B518-9CF850787C43",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:DrugTestChecker.xcodeproj",
+      "identifier" : "CE45D2C62FEDEDB9001279A3",
+      "name" : "DrugTestChecker"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:DrugTestChecker.xcodeproj",
+        "identifier" : "CE45D2D52FEDEDBA001279A3",
+        "name" : "DrugTestCheckerTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:DrugTestChecker.xcodeproj",
+        "identifier" : "CE45D2DF2FEDEDBA001279A3",
+        "name" : "DrugTestCheckerUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:DrugTestCheckerCore",
+        "identifier" : "DrugTestCheckerCoreTests",
+        "name" : "DrugTestCheckerCoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}

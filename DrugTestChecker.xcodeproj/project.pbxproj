@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE45D2F92FEE2460001279A3 /* DrugTestCheckerCore in Frameworks */ = {isa = PBXBuildFile; productRef = CE45D2F82FEE2460001279A3 /* DrugTestCheckerCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE45D2D72FEDEDBA001279A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE45D2BF2FEDEDB9001279A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE45D2C62FEDEDB9001279A3;
+			remoteInfo = DrugTestChecker;
+		};
+		CE45D2E12FEDEDBA001279A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE45D2BF2FEDEDB9001279A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE45D2C62FEDEDB9001279A3;
+			remoteInfo = DrugTestChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE45D2C72FEDEDB9001279A3 /* DrugTestChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrugTestChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE45D2D62FEDEDBA001279A3 /* DrugTestCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrugTestCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE45D2E02FEDEDBA001279A3 /* DrugTestCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrugTestCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE45D2F62FEE1ED4001279A3 /* DrugTestCheckerCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DrugTestCheckerCore; sourceTree = "<group>"; };
+		CE45D2FA2FEE25E6001279A3 /* DrugTestChecker.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = DrugTestChecker.xctestplan; path = DrugTestCheckerCore/Tests/DrugTestCheckerCoreTests/DrugTestChecker.xctestplan; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CE45D2C92FEDEDB9001279A3 /* DrugTestChecker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DrugTestChecker;
+			sourceTree = "<group>";
+		};
+		CE45D2D92FEDEDBA001279A3 /* DrugTestCheckerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DrugTestCheckerTests;
+			sourceTree = "<group>";
+		};
+		CE45D2E32FEDEDBA001279A3 /* DrugTestCheckerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DrugTestCheckerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE45D2C42FEDEDB9001279A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE45D2F92FEE2460001279A3 /* DrugTestCheckerCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE45D2D32FEDEDBA001279A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE45D2DD2FEDEDBA001279A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE45D2BE2FEDEDB9001279A3 = {
+			isa = PBXGroup;
+			children = (
+				CE45D2FA2FEE25E6001279A3 /* DrugTestChecker.xctestplan */,
+				CE45D2F62FEE1ED4001279A3 /* DrugTestCheckerCore */,
+				CE45D2C92FEDEDB9001279A3 /* DrugTestChecker */,
+				CE45D2D92FEDEDBA001279A3 /* DrugTestCheckerTests */,
+				CE45D2E32FEDEDBA001279A3 /* DrugTestCheckerUITests */,
+				CE45D2F72FEE2460001279A3 /* Frameworks */,
+				CE45D2C82FEDEDB9001279A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE45D2C82FEDEDB9001279A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE45D2C72FEDEDB9001279A3 /* DrugTestChecker.app */,
+				CE45D2D62FEDEDBA001279A3 /* DrugTestCheckerTests.xctest */,
+				CE45D2E02FEDEDBA001279A3 /* DrugTestCheckerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE45D2F72FEE2460001279A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE45D2C62FEDEDB9001279A3 /* DrugTestChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE45D2EA2FEDEDBA001279A3 /* Build configuration list for PBXNativeTarget "DrugTestChecker" */;
+			buildPhases = (
+				CE45D2C32FEDEDB9001279A3 /* Sources */,
+				CE45D2C42FEDEDB9001279A3 /* Frameworks */,
+				CE45D2C52FEDEDB9001279A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CE45D2C92FEDEDB9001279A3 /* DrugTestChecker */,
+			);
+			name = DrugTestChecker;
+			packageProductDependencies = (
+				CE45D2F82FEE2460001279A3 /* DrugTestCheckerCore */,
+			);
+			productName = DrugTestChecker;
+			productReference = CE45D2C72FEDEDB9001279A3 /* DrugTestChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE45D2D52FEDEDBA001279A3 /* DrugTestCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE45D2ED2FEDEDBA001279A3 /* Build configuration list for PBXNativeTarget "DrugTestCheckerTests" */;
+			buildPhases = (
+				CE45D2D22FEDEDBA001279A3 /* Sources */,
+				CE45D2D32FEDEDBA001279A3 /* Frameworks */,
+				CE45D2D42FEDEDBA001279A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE45D2D82FEDEDBA001279A3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CE45D2D92FEDEDBA001279A3 /* DrugTestCheckerTests */,
+			);
+			name = DrugTestCheckerTests;
+			packageProductDependencies = (
+			);
+			productName = DrugTestCheckerTests;
+			productReference = CE45D2D62FEDEDBA001279A3 /* DrugTestCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE45D2DF2FEDEDBA001279A3 /* DrugTestCheckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE45D2F02FEDEDBA001279A3 /* Build configuration list for PBXNativeTarget "DrugTestCheckerUITests" */;
+			buildPhases = (
+				CE45D2DC2FEDEDBA001279A3 /* Sources */,
+				CE45D2DD2FEDEDBA001279A3 /* Frameworks */,
+				CE45D2DE2FEDEDBA001279A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE45D2E22FEDEDBA001279A3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CE45D2E32FEDEDBA001279A3 /* DrugTestCheckerUITests */,
+			);
+			name = DrugTestCheckerUITests;
+			packageProductDependencies = (
+			);
+			productName = DrugTestCheckerUITests;
+			productReference = CE45D2E02FEDEDBA001279A3 /* DrugTestCheckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE45D2BF2FEDEDB9001279A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					CE45D2C62FEDEDB9001279A3 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					CE45D2D52FEDEDBA001279A3 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = CE45D2C62FEDEDB9001279A3;
+					};
+					CE45D2DF2FEDEDBA001279A3 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = CE45D2C62FEDEDB9001279A3;
+					};
+				};
+			};
+			buildConfigurationList = CE45D2C22FEDEDB9001279A3 /* Build configuration list for PBXProject "DrugTestChecker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE45D2BE2FEDEDB9001279A3;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CE45D2F52FEDEE85001279A3 /* XCLocalSwiftPackageReference "../Drug Test Checker/DrugTestCheckerCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CE45D2C82FEDEDB9001279A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE45D2C62FEDEDB9001279A3 /* DrugTestChecker */,
+				CE45D2D52FEDEDBA001279A3 /* DrugTestCheckerTests */,
+				CE45D2DF2FEDEDBA001279A3 /* DrugTestCheckerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE45D2C52FEDEDB9001279A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE45D2D42FEDEDBA001279A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE45D2DE2FEDEDBA001279A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE45D2C32FEDEDB9001279A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE45D2D22FEDEDBA001279A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE45D2DC2FEDEDBA001279A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE45D2D82FEDEDBA001279A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE45D2C62FEDEDB9001279A3 /* DrugTestChecker */;
+			targetProxy = CE45D2D72FEDEDBA001279A3 /* PBXContainerItemProxy */;
+		};
+		CE45D2E22FEDEDBA001279A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE45D2C62FEDEDB9001279A3 /* DrugTestChecker */;
+			targetProxy = CE45D2E12FEDEDBA001279A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE45D2E82FEDEDBA001279A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE45D2E92FEDEDBA001279A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE45D2EB2FEDEDBA001279A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.DrugTestChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE45D2EC2FEDEDBA001279A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.DrugTestChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE45D2EE2FEDEDBA001279A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.DrugTestCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrugTestChecker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DrugTestChecker";
+			};
+			name = Debug;
+		};
+		CE45D2EF2FEDEDBA001279A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.DrugTestCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrugTestChecker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DrugTestChecker";
+			};
+			name = Release;
+		};
+		CE45D2F12FEDEDBA001279A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.DrugTestCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrugTestChecker;
+			};
+			name = Debug;
+		};
+		CE45D2F22FEDEDBA001279A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.DrugTestCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrugTestChecker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE45D2C22FEDEDB9001279A3 /* Build configuration list for PBXProject "DrugTestChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE45D2E82FEDEDBA001279A3 /* Debug */,
+				CE45D2E92FEDEDBA001279A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE45D2EA2FEDEDBA001279A3 /* Build configuration list for PBXNativeTarget "DrugTestChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE45D2EB2FEDEDBA001279A3 /* Debug */,
+				CE45D2EC2FEDEDBA001279A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE45D2ED2FEDEDBA001279A3 /* Build configuration list for PBXNativeTarget "DrugTestCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE45D2EE2FEDEDBA001279A3 /* Debug */,
+				CE45D2EF2FEDEDBA001279A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE45D2F02FEDEDBA001279A3 /* Build configuration list for PBXNativeTarget "DrugTestCheckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE45D2F12FEDEDBA001279A3 /* Debug */,
+				CE45D2F22FEDEDBA001279A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CE45D2F52FEDEE85001279A3 /* XCLocalSwiftPackageReference "../Drug Test Checker/DrugTestCheckerCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../Drug Test Checker/DrugTestCheckerCore";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE45D2F82FEE2460001279A3 /* DrugTestCheckerCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE45D2F52FEDEE85001279A3 /* XCLocalSwiftPackageReference "../Drug Test Checker/DrugTestCheckerCore" */;
+			productName = DrugTestCheckerCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE45D2BF2FEDEDB9001279A3 /* Project object */;
+}
