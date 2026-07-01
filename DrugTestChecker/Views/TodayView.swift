@@ -11,9 +11,17 @@ import DrugTestCheckerCore
 
 struct TodayView: View {
     @State private var status: DrugTestStatus = .notChecked
+    @State private var isShowingPortalWebView = false
     @Environment(\.modelContext) private var modelContext
+
     @Query(sort: \TestResult.checkedAt, order: .reverse)
     private var results: [TestResult]
+
+    @Query private var profiles: [Profile]
+
+    private var savedProfile: Profile? {
+        profiles.first
+    }
     
     private var latestResult: TestResult? {
         results.first
@@ -83,9 +91,15 @@ struct TodayView: View {
                 }
 
                 Button("Check Now") {
-                    status = .noTestToday
+                    isShowingPortalWebView = true
                 }
                 .buttonStyle(.borderedProminent)
+                .disabled(savedProfile == nil)
+                
+                Button("Open Portal Web Check") {
+                    isShowingPortalWebView = true
+                }
+                .buttonStyle(.bordered)
 
                 if status == .needToTest {
                     Button("I Tested") {
@@ -138,8 +152,24 @@ struct TodayView: View {
                     status = latestResult.status
                 }
             }
+            .sheet(isPresented: $isShowingPortalWebView) {
+                PortalWebCheckView(
+                    pin: savedProfile?.pin ?? "",
+                    lastNameCode: ProfileValidator.lastNameCode(from: savedProfile?.lastName ?? "")
+                ) { portalText in
+                    let parsedStatus = PortalResultParser.parseStatus(from: portalText)
+
+                    saveResult(
+                        status: parsedStatus,
+                        rawPortalText: portalText
+                    )
+
+                    isShowingPortalWebView = false
+                }
+            }
         }
     }
+    
     private func saveResult(status: DrugTestStatus, rawPortalText: String = ""){
         let recorder = CheckResultRecorder(modelContext: modelContext)
         

@@ -12,6 +12,8 @@ public enum PortalResultParser {
         let text = portalText.lowercased()
 
         let needToTestPhrases = [
+            "you are scheduled for a drug test today",
+            "scheduled for a drug test today",
             "required to test today",
             "must test today",
             "you are required to test",
@@ -19,6 +21,8 @@ public enum PortalResultParser {
         ]
 
         let noTestTodayPhrases = [
+            "you are not scheduled to test today",
+            "not scheduled to test today",
             "not scheduled for today",
             "no test today"
         ]
