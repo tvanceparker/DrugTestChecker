@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 import DrugTestCheckerCore
 
 struct TodayView: View {
     @State private var status: DrugTestStatus = .notChecked
+    @Environment(\.modelContext) private var modelContext
 
     private var statusSymbol: String {
         switch status {
@@ -94,15 +96,27 @@ struct TodayView: View {
 
                     HStack {
                         Button("Not Checked") { status = .notChecked }
-                        Button("Clear") { status = .noTestToday }
-                        Button("Test") { status = .needToTest }
+                        Button("Clear"){
+                            saveResult(status: .noTestToday, rawPortalText: "Preview: no test today")
+                        }
+                        Button("Test") {
+                            saveResult(status: .needToTest, rawPortalText: "Preview: need to test")
+                        }
                     }
                     .buttonStyle(.bordered)
 
                     HStack {
-                        Button("Completed") { status = .completedTest }
-                        Button("Error") { status = .error }
-                        Button("Unknown") { status = .unknown }
+                        Button("Completed") {
+                            saveResult(status: .completedTest, rawPortalText: "Preview: completed test")
+                        }
+
+                        Button("Error") {
+                            saveResult(status: .error, rawPortalText: "Preview: error")
+                        }
+
+                        Button("Unknown") {
+                            saveResult(status: .unknown, rawPortalText: "Preview: unknown")
+                        }
                     }
                     .buttonStyle(.bordered)
                 }
@@ -111,6 +125,21 @@ struct TodayView: View {
             }
             .padding()
             .navigationTitle("Today")
+        }
+    }
+    private func saveResult(status: DrugTestStatus, rawPortalText: String = ""){
+        let result = TestResult(
+            checkedAt: .now,
+            status: status,
+            rawPortalText: rawPortalText
+        )
+        modelContext.insert(result)
+        
+        do {
+            try modelContext.save()
+            self.status = status
+        } catch {
+            print("Failed to save test result: \(error)")
         }
     }
 }
